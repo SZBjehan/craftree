@@ -1,0 +1,556 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Imbue:wght@300;400&family=Lobster&family=Patua+One&family=Rubik&family=Sniglet&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+header,
+section{
+    overflow-x: hidden;
+}
+
+:root{
+    --Snigle-font:"Snigle",cursive;
+    --Rubik: "Rubik",cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "Lobster",cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff5130);
+    --light-gray: rgba(255,255,255,0.877);
+    --headgrad: linear-gradient(to bottom, black, #2e2c2caf);
+    --backgrad: linear-gradient(to bottom, #2e2c2caf, black);
+    --greengrad: linear-gradient(to bottom, lightgreen, rgb(73, 168, 73));
+    --royblue: rgb(17,30,108);
+    --bluegrad: linear-gradient(to bottom, rgb(65, 143, 207), var(--royblue));
+    --gradblue: linear-gradient(to bottom, var(--royblue), rgb(65, 143, 207));
+
+
+}
+
+header a{
+    font-family: pt-serif;
+    font-size: 1.3em;
+    color: whitesmoke;
+
+}
+
+header{
+    background: #fff8f8;
+    background: var(--bluegrad);
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: black;
+    background: var(--royblue);
+    z-index: 100000;
+}
+.navbar .sticky{
+    padding: 5px 100px;
+    background: white;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 120px;
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0,2);
+    z-index: 1000;
+
+}
+
+.dropdown-content a{
+    color: var(--royblue);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background: rgb(92, 113, 133);
+
+
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    border-radius: 2vmin;
+    color: white;
+}
+
+header .nav-item:last-child{
+    padding-right: 9.5em;
+}
+
+header .nav-item{
+    padding: 0.8em;
+}
+
+header .navnar-brand{
+    padding-left: 8rem;
+}
+
+header .nav-link:hover{
+    color: rgba(156, 15, 15, 0.767);
+}
+
+header .container{
+    padding-top: 35vmin;
+}
+
+header .row .col-md-5{
+    padding: 4.2vmn 1vmin;
+}
+header .row .col-md-7{
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    font-family: var(--Rubik);
+    color: wheat;
+}
+
+header .row .col-md-5 img{
+    width:90%;
+}
+
+header .container.col-md-7 h6{
+    padding: 1vmin;
+    letter-spacing: 4px;
+
+}
+
+header .container .col-md-7 h1{
+    font-size: 8.5vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p{
+    padding:1vmin 5vmin;
+}
+
+header .container .col-md-7 button{
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* Section 1*/
+
+.section-1{
+    padding: 20vmin;
+
+}
+
+.section-1 .row .col-md-6 .pray img{
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child{
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel{
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 8vmin 5vmin 5vmin 2vmin;
+    box-shadow: 0px 25px 42px rgba(0,0,0,0.2);
+}
+
+.section-1 .row .col-md-6 .panel h1{
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p{
+    font-size: 1em;
+    color: rgba(0,0,0,0.5);
+}
+
+/* Section 2 */
+
+.section-2{
+    background: var(--gradblue);
+}
+
+.section-2 .container{
+    padding-top: 35vmin;
+}
+
+.section-2 .row .col-md-5{
+    padding: 4.2vmn 1vmin;
+}
+.section-2 .row .col-md-7{
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    font-family: var(--Rubik);
+    color: wheat;
+}
+
+.section-2 .row .col-md-5 img{
+    width:90%;
+}
+
+.section-2 .container.col-md-7 h6{
+    padding: 1vmin;
+    letter-spacing: 4px;
+
+}
+
+.section-2 .container .col-md-7 h1{
+    font-size: 8.5vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+.section-2 .container .col-md-7 p{
+    padding:1vmin 5vmin;
+}
+
+.section-2 .container .col-md-7 button{
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.section-2 .purchase>h1{
+    padding-top: 1vmin;
+    padding-bottom: 0.1em;
+    font-family: var(--Lobster);
+    color: rgb(255, 255, 255);
+    
+}
+
+.section-2 .purchase >p{
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 10vmin;
+    color:rgb(255, 255, 255)
+}
+
+.section-2 .purchase .cards .card{
+    width: 22rem;
+    margin: 3vmin;
+}
+
+.section-2 .cards div{
+    padding:0;
+    margin:0;
+}
+
+.section-2 .cards .title{
+    background: rgba(208, 241, 241, 0.199);
+    padding: 1.4rem 2.5rem;
+}
+
+.section-2 .card .card-text{
+    padding: 2.5rem 3rem;
+    color: var(--light-black);
+}
+
+.section-2 .card-body .pricing{
+    background: rgba(208, 241, 241, 0.199);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+
+.section-2 .card-body .pricing > h1{
+    font-size: 10vmin;
+    padding: 1em 0.5em;
+} 
+
+
+/* Section 2-1 */
+
+.section-2-1{
+    background: var(--bluegrad);
+}
+
+.section-2-1 .container{
+    padding-top: 35vmin;
+}
+
+.section-2-1 .row .col-md-5{
+    padding: 4.2vmn 1vmin;
+}
+.section-2-1 .row .col-md-7{
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    font-family: var(--Rubik);
+    color: wheat;
+}
+
+.section-2-1 .row .col-md-5 img{
+    width:90%;
+}
+
+.section-2-1 .container.col-md-7 h6{
+    padding: 1vmin;
+    letter-spacing: 4px;
+
+}
+
+.section-2-1 .container .col-md-7 h1{
+    font-size: 8.5vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+.section-2-1 .container .col-md-7 p{
+    padding:1vmin 5vmin;
+}
+
+.section-2-1 .container .col-md-7 button{
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.section-2-1 .purchase{
+    padding-top: 20vmin;
+}
+
+.section-2-1 .purchase>h1{
+    padding-top: 1vmin;
+    padding-bottom: 0.1em;
+    font-family: var(--Lobster);
+    color: rgb(255, 255, 255);
+    
+}
+
+.section-2-1 .purchase >p{
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 10vmin;
+    color:rgb(255, 255, 255)
+}
+
+.section-2-1 .purchase .cards .card{
+    width: 22rem;
+    margin: 3vmin;
+}
+
+.section-2-1 .cards div{
+    padding:0;
+    margin:0;
+}
+
+.section-2-1 .cards .title{
+    background: rgba(208, 241, 241, 0.199);
+    padding: 1.4rem 2.5rem;
+}
+
+.section-2-1 .card .card-text{
+    padding: 2.5rem 3rem;
+    color: var(--light-black);
+}
+
+.section-2-1 .card-body .pricing{
+    background: rgba(208, 241, 241, 0.199);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+
+.section-2-1 .card-body .pricing > h1{
+    font-size: 10vmin;
+    padding: 1em 0.5em;
+} 
+
+/* Section 3 */
+
+.section-3{
+    height: 70vmin;
+    margin-top: 15vmin;
+    background: var(--light-black);
+}
+
+.section-3 .col-md-12 >h1{
+    padding: 2em 0em 0.5em 0em;
+    color: black;
+    font-family: var(--Patua);
+    font-size: 6vmin;
+}
+
+.section-3 ,.col-md-12 >p{
+    padding:0.4em;
+    padding-bottom: 2em;
+    color: lightgray;
+    font-size: 3vmin;
+}
+
+.section-3 .desktop{
+    background:  rgba(156, 15, 15, 0.767);
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+
+.section-3 .desktop h3{
+    font-size: 4vmin;
+
+}
+
+.section-3 .desktop p{
+    font-size: 2vmin;
+}
+
+
+.section-3 .mobile{
+    background: rgba(156, 15, 15, 0.767);
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+
+.section-3 .mobile h3{
+    font-size: 4vmin;
+
+}
+
+.section-3 .mobile p{
+    font-size: 2vmin;
+}
+
+
+/* Section 4*/
+
+.section-4 .container h1{
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+
+.section-4 .team {
+    padding: 10vmin 4vmin;
+    
+}
+
+.section-4 .card{
+    width:22rem;
+    margin-top: 10vmin;
+}
+
+.section-4 .card .card-text{
+    padding: 0.5em;
+}
+
+.section-4 .card .card-body>a{
+    font-size: 1.5em;    
+}
+
+.section-4 .carousel-item{
+    padding-left: 3rem;
+}
+
+.border-radius{
+    border-radius: 340px;
+    width: 60%;
+}
+
+/* Footer*/
+
+footer{
+    background: var(--royblue);
+    overflow-x: hidden;
+    padding: 4vmin 18vmin;
+}
+
+footer .column i{
+    color:rgba(255, 132, 125, 0.349);
+
+}
+footer .column i+i{
+    padding: 0 0.5em;
+}
+
+
+/* Sticky */
+
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 9999;
+    transition: all 1s ease;
+}
+
+/* inquiry */
+
+
+.section-i .table-head h1{
+    padding: 0.5em;
+    padding-top: 8rem;
+    text-align: left;
+    font-family: var(--Patua);
+}
+.section-i .table-body{
+    font-family: var(--Rubik);
+    padding-left: 7em;
+    font-size: 25px;
+}
+
+.section-i .table-body .form-control{
+    width: 600px;
+    background: rgb(179, 169, 169); 
+    color: #fff ;
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+.section-i .table-body .form-control.submit{
+    background: rgb(88, 41, 13);
+    border-color: transparent;
+    color: #fffff9;
+    font-size: 23px;
+    height: 50px;
+    letter-spacing: 2px;
+
+}
+
+/* Founding member*/
+
+.section-f{
+    padding: 20vmin;
+
+}
+
+.section-f .row .col-md-6 .pray img{
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2em;
+}
+
+.section-f .row .col-md-6:last-child{
+    position: relative;
+}
+
+.section-f .row .col-md-6 .panel{
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 8vmin 5vmin 5vmin 2vmin;
+    box-shadow: 0px 25px 42px rgba(0,0,0,0.2);
+}
+
+.section-f .row .col-md-6 .panel h1{
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+
+.section-f .row .col-md-6 .panel p{
+    font-size: 1em;
+    color: rgba(0,0,0,0.5);
+}
+
+
